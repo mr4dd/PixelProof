@@ -1,0 +1,16 @@
+{
+    "description": "Blocks AI generated images from websites and allows the user to show them if they so please",
+    "manifest_version": 3,
+    "name": "PixelProof",
+    "version": "1.0",
+    "permissions": [
+        "tabs",
+        "<all_urls>"
+    ],
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["background.js"]
+        }
+    ]
+}
